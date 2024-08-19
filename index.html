@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
 </head>
+
 <body>
+    <p id="resultado">0</p>
+    <input type="number" id="numero1">
+    <input type="number" id="numero2">
+    <button onclick="soma()"> + </button>
+    <button onclick="subtrair()"> - </button>
+    <button onclick="multiplicar()"> x </button>
+    <button onclick="dividir()"> ÷ </button>
+    <button onclick="Limpar()"> C </button>
+
+
+    <script>
+        const resultado = document.getElementById("resultado")
+        const n1 = document.getElementById("numero1")
+        const n2 = document.getElementById("numero2")
     
+        function soma() {
+            const somaFinal = parseInt(n1.value) + parseInt(n2.value)
+            resultado.textContent = somaFinal;
+        }
+
+        function subtrair() {
+            const subtrairFinal = parseInt(n1.value) - parseInt(n2.value)
+            resultado.textContent = subtrairFinal   
+        }
+
+        function multiplicar() {
+            const multiFinal = parseInt(n1.value) * parseInt(n2.value)
+            resultado.textContent = multiFinal;
+        }
+
+        function dividir() {
+            const diviFinal = parseInt(n1.value) / parseInt (n2.value)
+            resultado.textContent = diviFinal;
+        }
+
+        function Limpar() {
+            resultado.textContent = 0 
+
+        }
+    </script>
 </body>
+
 </html>
