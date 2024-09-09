@@ -5,17 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <p id="resultado">0</p>
-    <input type="number" id="numero1">
-    <input type="number" id="numero2">
-    <button onclick="soma()"> + </button>
-    <button onclick="subtrair()"> - </button>
-    <button onclick="multiplicar()"> x </button>
-    <button onclick="dividir()"> ÷ </button>
-    <button onclick="Limpar()"> C </button>
+    <div class="container">
+        <div class="div-p">   
+            <p id="resultado">0</p>
+        </div>
+        <div class="div-1">
+            <div class="input-1">
+                <input type="number" id="numero1">
+                <input type="number" id="numero2">
+                <button onclick="Limpar()"> C </button>
+            </div>
+            
+            <div class="button-1">
+                <button onclick="soma()"> + </button>
+                <button onclick="subtrair()"> - </button>
+                <button onclick="multiplicar()"> x </button>
+                <button onclick="dividir()"> ÷ </button>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+  
 
 
     <script>

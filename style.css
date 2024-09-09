@@ -1,0 +1,32 @@
+.container {
+  background-color: #1465bb;
+  width: 300px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: auto;
+  gap: 30px;
+}
+
+.div-1 {
+  display: grid;
+  grid-template-columns: auto;
+
+}
+
+.input-1 {
+  display: grid;
+  grid-template-columns: 60px 60px 60px;
+  height: 30px;
+}
+
+.button-1 {
+  display: grid;
+  grid-template-columns: 60px 60px 60px 60px;
+  height: 30px;
+
+}
+
+.div-p {
+  margin: 0;
+}
