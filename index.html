@@ -9,37 +9,40 @@
 </head>
 
 <body>
-    <div class="container">
-        Calculadora
-        <div class="div-p">   
-            <h1 id="resultado">0</h1>
-        </div>
-        <div class="div-1">
-            <div class="input-1">
-                <input type="number" id="numero1">
-                <input type="number" id="numero2">
-                <button onclick="Limpar()"> C </button>
+    <div class="container-2">
+        <div class="container">
+
+            <div class="div-p">
+                <h1 id="resultado">0</h1>
             </div>
-            
-            <div class="button-1">
-                <button onclick="soma()"> + </button>
-                <button onclick="subtrair()"> - </button>
-                <button onclick="multiplicar()"> x </button>
-                <button onclick="dividir()"> ÷ </button>
+            <div class="div-1">
+                <div class="input-1">
+                    <input type="number" id="numero1">
+                    <input type="number" id="numero2">
+                    <button onclick="Limpar()"> C </button>
+                </div>
+    
+                <div class="button-1">
+                    <button onclick="soma()"> + </button>
+                    <button onclick="subtrair()"> - </button>
+                    <button onclick="multiplicar()"> x </button>
+                    <button onclick="dividir()"> ÷ </button>
+                </div>
             </div>
+    
         </div>
-        
+    
     </div>
-    
-    
-  
+   
+
+
 
 
     <script>
         const resultado = document.getElementById("resultado")
         const n1 = document.getElementById("numero1")
         const n2 = document.getElementById("numero2")
-    
+
         function soma() {
             const somaFinal = parseInt(n1.value) + parseInt(n2.value)
             resultado.textContent = somaFinal;
@@ -47,7 +50,7 @@
 
         function subtrair() {
             const subtrairFinal = parseInt(n1.value) - parseInt(n2.value)
-            resultado.textContent = subtrairFinal   
+            resultado.textContent = subtrairFinal
         }
 
         function multiplicar() {
@@ -56,12 +59,12 @@
         }
 
         function dividir() {
-            const diviFinal = parseInt(n1.value) / parseInt (n2.value)
+            const diviFinal = parseInt(n1.value) / parseInt(n2.value)
             resultado.textContent = diviFinal;
         }
 
         function Limpar() {
-            resultado.textContent = 0 
+            resultado.textContent = 0
 
         }
     </script>

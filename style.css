@@ -1,11 +1,19 @@
 .container {
   background-color: #1465bb;
   width: 300px;
-  display: grid;
-  align-items: center;
+  display: flex;
   justify-content: center;
-  grid-template-columns: auto;
+ align-items: center;
+ grid-template-columns: auto;
   gap: 30px;
+  border-radius: 10px;
+  height: 300px;
+}
+
+.container-2{
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
 }
 
 .div-1 {
@@ -24,7 +32,6 @@
   display: grid;
   grid-template-columns: 60px 60px 60px 60px;
   height: 30px;
-
 }
 
 .div-p {
